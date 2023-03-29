@@ -1,0 +1,9 @@
+<app-header *ngIf="!isAdminLoggedIn"></app-header>
+<ng-container *ngIf="isAdminLoggedIn">
+<app-side-bar>
+    <router-outlet>
+    </router-outlet>
+</app-side-bar>
+</ng-container>
+
+<app-footer *ngIf="!isAdminLoggedIn"></app-footer>
