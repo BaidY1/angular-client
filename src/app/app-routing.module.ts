@@ -10,20 +10,27 @@ import { TutorProfileComponent } from './pages/tutor-profile/tutor-profile.compo
 import { SettingsComponent } from './pages/settings/settings.component';
 import { MyRequestsComponent } from './pages/myRequests/myRequests.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { TeacherComponent } from './admin/teacher/teacher.component';
+import { BookingListComponent } from './admin/booking-list/booking-list.component';
+import { TransactionListComponent } from './admin/transaction-list/transaction-list.component';
 
 const routes: Routes = [
-  { path: '', component: MainPageComponent },
+  { path: '', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signup-tutor', component: SignupTutorComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'tutors', component: TutorsComponent },
   { path: 'myRequests', component: MyRequestsComponent },
-  
+
   { path: 'tutor/:id', component: TutorProfileComponent },
   { path: 'settings', component: SettingsComponent },
 
-  {path:'admin',component:DashboardComponent}
+  {path:'admin',component:DashboardComponent},
+  {path:'admin/teacher',component:TeacherComponent},
+  {path:'admin/booking',component:BookingListComponent},
+  {path:'admin/booking/transaction',component:TransactionListComponent},
+  
 ];
 
 @NgModule({

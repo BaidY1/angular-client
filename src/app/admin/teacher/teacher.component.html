@@ -1,0 +1,76 @@
+<div class="card p-4 m-4">
+    <div>
+      <div class="page-title">Teacher</div>
+    </div>
+    <div>
+  <table class="table align-middle mb-0 bg-white custom-table">
+    <thead class="bg-light">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Surname</th>
+        <th>Country</th>
+        <th>Rate</th>
+        <th>Language</th>
+        <th>Headline</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let teacher of teachers">
+      <tr>
+       
+          <td>
+            {{teacher.id}}
+          </td>
+          <td>
+  
+            {{teacher.name}}
+          </td>
+          
+          <td>
+  
+            {{teacher.email}}
+          </td>
+          <td>
+  
+            {{teacher.surname}}
+          </td>
+          <td>
+  
+            {{teacher.country}}
+          </td>
+          <td>
+  
+            {{teacher.rate}}
+          </td>
+          <td>
+  
+            {{teacher.language}}
+          </td>
+          <td>
+  
+            {{teacher.headline}}
+          </td>
+          <td>
+  
+            {{teacher.description}}
+          </td>
+          <td>
+            <button (click)="downloadCertification(teacher.certification)">Download Certification</button>
+            <button (click)="downloadVideo(teacher.video)">Download Video</button>
+            <div *ngIf="teacher.status;else elseBlock"> Approved </div>
+            <ng-template #elseBlock><button (click)="clickCheck(teacher.id)">DO ACTION</button></ng-template>
+            
+        </td>
+      </tr>
+    </ng-container>
+  
+    </tbody>
+  </table>
+  </div>
+  </div>
+  
+  

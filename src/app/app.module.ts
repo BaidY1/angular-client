@@ -13,7 +13,6 @@ import { jqxSchedulerModule } from 'jqwidgets-ng/jqxscheduler';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
-import { MainPageComponent } from './pages/main-page/main-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProfileComponent } from './pages/profile/profile.component';
@@ -58,9 +57,9 @@ import { SettingsAccountComponent } from './components/settings/settings-account
 import { SettingsPasswordComponent } from './components/settings/settings-password/settings-password.component';
 
 import {
-  NgxMatDatetimePickerModule, 
-  NgxMatNativeDateModule, 
-  NgxMatTimepickerModule 
+  NgxMatDatetimePickerModule,
+  NgxMatNativeDateModule,
+  NgxMatTimepickerModule
 } from '@angular-material-components/datetime-picker';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -75,12 +74,14 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { AdminModule } from './admin/admin.module';
+import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainPageComponent,
+
     HeaderComponent,
     FooterComponent,
     ProfileComponent,
@@ -124,7 +125,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     SettingsPasswordComponent,
 
     PopupComponent,
-      SideBarComponent
+      SideBarComponent,
+      HeaderAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -153,7 +155,9 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     MatDialogModule,
     MatNativeDateModule ,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    AdminModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
