@@ -1,9 +1,15 @@
+<div class="main">
 <app-header *ngIf="!isAdminLoggedIn"></app-header>
 <ng-container *ngIf="isAdminLoggedIn">
-<app-side-bar>
-    <router-outlet>
-    </router-outlet>
-</app-side-bar>
-</ng-container>
+<app-side-bar></app-side-bar>
+  <div>
+    <app-header></app-header>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
 
+  </div>
+</ng-container>
+</div>
 <app-footer *ngIf="!isAdminLoggedIn"></app-footer>
+

@@ -12,14 +12,14 @@ import { MyRequestsComponent } from './pages/myRequests/myRequests.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', component: MainPageComponent },
+  { path: '', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signup-tutor', component: SignupTutorComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'tutors', component: TutorsComponent },
   { path: 'myRequests', component: MyRequestsComponent },
-  
+
   { path: 'tutor/:id', component: TutorProfileComponent },
   { path: 'settings', component: SettingsComponent },
 
