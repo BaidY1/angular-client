@@ -15,7 +15,7 @@ import { BookingListComponent } from './admin/booking-list/booking-list.componen
 import { TransactionListComponent } from './admin/transaction-list/transaction-list.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', component: MainPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signup-tutor', component: SignupTutorComponent },
