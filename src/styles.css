@@ -510,3 +510,45 @@ border-bottom: 0;
   font-size: 16px;
   color: #0096b2;
 }
+.ctm-primary-btn{
+  background-color: #0096b2;
+  border: 1px solid #0096b2;
+  min-width: 60px;
+}
+.ctm-primary-btn:hover{
+  background-color: #03788d;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+ .show>.btn-primary.dropdown-toggle:focus,
+ .btn-primary:focus,.btn-primary:not(:disabled):not(.disabled).active,
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .show>.btn-primary.dropdown-toggle{
+  background-color: #03788d;
+  box-shadow: 0 0 0 0.2rem rgb(37 216 199 / 50%);
+  border: 1px solid #0096b2;
+}
+.ctm-modal .modal-header{
+  font-size: 24px;
+  background-color: #0096b2;
+  color: #ffff;
+  border:0;
+  padding: 10px 15px;
+}
+.ctm-modal .modal-content{
+   border-radius: 5px;
+   border: 0;
+}
+.ctm-modal .modal-header .close span{
+  color: #ffffff;
+}
+.ctm-modal .modal-footer{
+  border: 0;
+  padding-top: 0;
+}
+.ctm-secondary-btn{
+  background-color: #f5f5f5;
+    border: 1px solid #0096b2;
+    color: #0096b2;
+    min-width: 60px;
+}

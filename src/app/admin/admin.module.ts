@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { BookingListComponent } from './booking-list/booking-list.component';
 import { TransactionListComponent } from './transaction-list/transaction-list.component';
+import { CreateBookingComponent } from './create-booking/create-booking.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { TransactionListComponent } from './transaction-list/transaction-list.co
     TeacherComponent,
     BookingListComponent,
     TransactionListComponent,
+    CreateBookingComponent
 
   ],
   imports: [

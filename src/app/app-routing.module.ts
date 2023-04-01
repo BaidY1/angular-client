@@ -13,6 +13,7 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { TeacherComponent } from './admin/teacher/teacher.component';
 import { BookingListComponent } from './admin/booking-list/booking-list.component';
 import { TransactionListComponent } from './admin/transaction-list/transaction-list.component';
+import { CreateBookingComponent } from './admin/create-booking/create-booking.component';
 
 const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path:'admin/teacher',component:TeacherComponent},
   {path:'admin/booking',component:BookingListComponent},
   {path:'admin/booking/transaction',component:TransactionListComponent},
+  {path:'admin/create',component:CreateBookingComponent}
   
 ];
 
