@@ -1,0 +1,43 @@
+<div class="card p-4 m-4">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control"/>
+         </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">First Name</label>
+          <input class="form-control" type="text" placeholder="Default input">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Last Name</label>
+            <input class="form-control" type="text" placeholder="Default input">
+          </div>
+
+        <button type="submit" class="btn btn-primary ctm-primary-btn">Submit</button>
+        <button type="button" class="btn btn-primary ctm-primary-btn ml-2s" data-toggle="modal" data-target="#exampleModal">
+           Delete
+          </button>
+       </form>
+</div>
+
+<!-- Modal Start-->
+<div class="modal fade ctm-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div>Do you want to Delete?</div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-light ctm-secondary-btn" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary ctm-primary-btn">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal End-->
